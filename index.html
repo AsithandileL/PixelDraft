@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"></link>
+    <script src="./main.js"></script>
+    <title>PixelDraft</title>
+</head>
+<body onload="init();">
+<!-- Create a canvas element and add a border around it. -->
+<div id="canvasholder">
+  <canvas id="canvas" width="800" height="600">
+      Sorry, your browser doesn't support the HTML5 &lt;canvas&gt; element.
+  </canvas>
+</div>
+
+<!-- Add some controls to choose drawing color and tool. -->
+
+<p>Color: <select id="colorChoice">
+            <option value="0">Random Color</option>
+            <option value="1">Red</option>
+            <option value="2">Green</option>
+            <option value="3">Blue</option>
+            <option value="4">Purple</option>
+         </select>
+         Tool: <select id="toolChoice">
+            <option value="1">Square Tool</option>
+            <option value="2">Heart Tool</option>
+            <option value="3">Curve Tool</option>
+            <option value="4">Circle Tool</option>
+            <option value="5">Erase Tool</option>
+         </select>
+         <button id="clearButton">Clear</button>
+</p>
+
+</body>
+</html>
