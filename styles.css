@@ -1,16 +1,45 @@
 body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
         background-color: #DDDDDD;
         -webkit-user-select: none; /* turn off text selection  / Webkit */
         -moz-user-select: none;    /* Firefox */
         -ms-user-select: none;     /* IE 10  */
         -o-user-select: none;      /* Opera */
         user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        overflow: hidden;
+    }
+    aside{
+        height: 80%;
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+     #canvasholder {
+        border:1px solid black;
+        border-radius: 5px;
+        /* float: right; /* This makes the border exactly fit the canvas. */
     }
     canvas {
         background-color: white;
-        display: block;
+        
     }
-    #canvasholder {
-        border:2px solid black;
-        float: left; /* This makes the border exactly fit the canvas. */
+    select{
+        padding: 1vh 1.5vh;
     }
+    button{
+        padding: 1vh 2vw;
+        background-color: cornflowerblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    button:hover{
+        opacity: 0.5;
+        } 
